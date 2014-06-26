@@ -11,7 +11,29 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/', function(){
+	return "we are home";
+});
+
+Route::get('/resume', function(){
+	return "this is my resume";
+});
+
+Route::get('/portfolio', function(){
+	return "this is my portfolio";
+});
+
+
+
+Route::get('/sayhello/{name}', function($name)
 {
-	return View::make('hello');
+	if ($name == "genaro")
+    {
+        return Redirect::to('/');
+    }
+    else
+    {
+        return "Hello, $name!";
+    }
+
 });
