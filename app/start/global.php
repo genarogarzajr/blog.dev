@@ -31,6 +31,15 @@ ClassLoader::addDirectories(array(
 |
 */
 
+App::missing(function($exception)
+{
+    return Response::view('errors.index', array(), 404);
+});
+
+
+
+
+
 Log::useFiles(storage_path().'/logs/laravel.log');
 
 /*
