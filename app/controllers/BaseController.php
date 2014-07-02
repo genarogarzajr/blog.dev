@@ -7,6 +7,16 @@ class BaseController extends Controller {
 	 *
 	 * @return void
 	 */
+
+public function __construct()
+{
+
+	$this->beforeFilter('csrf', array('on' => ['post', 'delete', 'put']));
+}
+
+
+
+
 	protected function setupLayout()
 	{
 		if ( ! is_null($this->layout))

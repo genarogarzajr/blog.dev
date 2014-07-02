@@ -6,20 +6,18 @@
     {{$errors->first('title', '<span class="help-block">:message</span>')}}
     @endif
 
+{{ Form::open(array('action'=>'PostsController@store')) }}
+    {{ Form::label('title', 'Title')}}
+    {{ Form::text('title') }}
 
-
-  <form method="POST" action="{{{ action('PostsController@store') }}}">
-    
-        <label for="title">New Blog title</label>        
-        <input type="text" name="title" value="{{{ Input::old('title') }}}">
         <br>
         <label for="body">New Blog body</label>      
-        <!-- <input id-body type="text" name="body" value="{{{ Input::old('body') }}}">  -->
+        
         <textarea id-body type="text" name="body" >  {{{ Input::old('body') }}}</textarea> 
         <br>
         <input type="submit">
 
-        
+{{ Form::close() }}        
     
-</form>
+
 @stop

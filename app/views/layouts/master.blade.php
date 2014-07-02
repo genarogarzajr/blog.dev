@@ -14,7 +14,18 @@
     <script src="/bootstrap/assets/js/Chart.js"></script>
 </head>
 <body>
-    master.blade.php
-    @yield('contents')
+
+    <div>
+        @if (Session::has('successMessage'))
+            <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+        @endif
+        @if (Session::has('errorMessage'))
+            <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+        @endif
+
+        @yield('contents')
+    </div>
+
+
 </body>
 </html>

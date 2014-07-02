@@ -10,7 +10,7 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		//displays all posts
-	    $posts = Post::all();
+	    $posts = Post::paginate(4);
 	    return View::make('posts.index')->with('posts', $posts);		
 	}
 
@@ -34,23 +34,30 @@ class PostsController extends \BaseController {
 	public function store()
 	{	
 		
+		
+		
+
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails())
 		{
-
+			// set flash data
+			Session::flash('errorMesage', 'Store Failed');
+			
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
-		else
-		{
-		//writes new posts to table
-	    $post = new Post();
-	    $post->title = Input::get('title');
-	    $post->body = Input::get('body');
-	    $post->save();
-		return Redirect::action('PostsController@index');
-		}
-		// Log::info(Input::all());
-		// return Redirect::back()->withInput();
+			else
+			{
+				// set flash data
+			Session::flash('successMessage', 'Store updated');
+			
+			//writes new posts to table
+		    $post = new Post();
+		    $post->title = Input::get('title');
+		    $post->body = Input::get('body');
+		    $post->save();
+			return Redirect::action('PostsController@index');
+			}
+		
 	}
 
 
@@ -78,7 +85,10 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return 'edits post ' . $id;
+		$post = Post::find($id);
+	   	return View::make('posts.edit')->with('post', $post);
+
+		// return 'edits post ' . $id;
 	}
 
 
@@ -89,8 +99,14 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function update($id)
-	{
-		return 'updates post ' . $id;
+	{	
+		// set flash data
+		Session::flash('successMessage', 'Store updated');
+		$post = Post::find($id);
+	    $post->title = Input::get('title');
+	    $post->body = Input::get('body');
+	    $post->save();
+		return Redirect::action('PostsController@index');
 	}
 
 
@@ -102,7 +118,11 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		
+		$post = Post::findOrFail($id);
+		$post->delete();
+		Session::flash('successMessage', 'Post deleted susessfully');
+		return Redirect::action('PostsController@index');
 	}
 
 
