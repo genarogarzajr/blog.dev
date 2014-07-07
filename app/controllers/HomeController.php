@@ -15,11 +15,42 @@ class HomeController extends BaseController {
 	|
 	*/
 
+//--------------------------------------	
+	public function showLogin()
+	{
+		return View::make('posts.login');
+	}
+//----------------------------------
+	public function doLogin()
+	{
+		$email = Input::get('email');
+		$password = Input::get('password');
+
+		if (Auth::attempt(array('email' => $email, 'password' => $password)))
+		{
+			Session::flash('successMessage', "Login Sucessful.");
+			return Redirect::intended(action('PostsController@index'));
+		}
+		else
+		{
+			Session::flash('errorMessage', "Email or password not found.");
+			return Redirect::action('HomeController@showLogin');
+		}	
+	}
+
+//------------------------------
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::action('PostsController@index');
+	}
+
+//--------------------------------
 	public function showWelcome()
 	{
 		return Redirect::action('HomeController@sayHello', ['Codeup']);
 	}
-
+//----------------------------------
 	public function sayHello($name)
 	{
 		$data = array(
@@ -27,16 +58,14 @@ class HomeController extends BaseController {
 			);
 	return View::make('temp.my-first-view')->with($data);
 	} 
-
-
-
+//-----------------------------
 	public function resume()
 	{
 
 		return View::make('resume');
 	}
 
-
+//---------------------------------
 	public function portfolio()
 	{
 

@@ -2,6 +2,19 @@
 
 class PostsController extends \BaseController {
 
+public function __construct()
+{
+    // call base controller constructor
+    parent::__construct();
+
+    // run auth filter before all methods on this controller except index and show
+    $this->beforeFilter('auth', array('except' => array('index', 'show')));
+}
+
+
+
+//-----------------------------------------------
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -9,12 +22,19 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//displays all posts
-	    $posts = Post::paginate(4);
+		if (Input::has("search")) 
+		{
+			$var = Input::get('search');
+			$posts = Post::with('user')->where('title', 'LIKE', "%$var%")->paginate(4);
+		} else {
+				//displays all posts sorted by created at date decending
+		    	$posts = Post::with('user')->orderBy('created_at', 'desc')->paginate(4);
+				}
+		
 	    return View::make('posts.index')->with('posts', $posts);		
 	}
 
-
+//--------------------------------------------------
 	/**
 	 * Show the form for creating a new resource.
 	 *
@@ -22,21 +42,17 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('posts.create');
+		return View::make('posts.editcreate');
 	}
 
-
+//------------------------------------------------
 	/**
 	 * Store a newly created resource in storage.
 	 *
 	 * @return Response
 	 */
 	public function store()
-	{	
-		
-		
-		
-
+	{		
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails())
 		{
@@ -52,6 +68,11 @@ class PostsController extends \BaseController {
 			
 			//writes new posts to table
 		    $post = new Post();
+		    
+		    //these two lines do the same thing
+		    // $post = user_id Auth::user()->id;
+		    $post->user()->associate(Auth::user());
+		    
 		    $post->title = Input::get('title');
 		    $post->body = Input::get('body');
 		    $post->save();
@@ -60,7 +81,7 @@ class PostsController extends \BaseController {
 		
 	}
 
-
+//-------------------------------------------
 	/**
 	 * Display the specified resource.
 	 *
@@ -76,7 +97,7 @@ class PostsController extends \BaseController {
 		// return 'show posts ' . $id;
 	}
 
-
+//--------------------------------------------
 	/**
 	 * Show the form for editing the specified resource.
 	 *
@@ -86,12 +107,12 @@ class PostsController extends \BaseController {
 	public function edit($id)
 	{
 		$post = Post::find($id);
-	   	return View::make('posts.edit')->with('post', $post);
+	   	return View::make('posts.editcreate')->with('post', $post);
 
 		// return 'edits post ' . $id;
 	}
 
-
+//---------------------------------------------
 	/**
 	 * Update the specified resource in storage.
 	 *
@@ -109,7 +130,7 @@ class PostsController extends \BaseController {
 		return Redirect::action('PostsController@index');
 	}
 
-
+//----------------------------------------------
 	/**
 	 * Remove the specified resource from storage.
 	 *

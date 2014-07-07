@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function(){
-	return View::make('temp.my-first-view');
-});
+Route::get('/login', 'HomeController@showLogin');
+
+Route::post('/login', 'HomeController@doLogin');
+
+Route::get('/logout', 'HomeController@logout');
 
 Route::resource('posts', 'PostsController');
 

@@ -33,7 +33,7 @@ ClassLoader::addDirectories(array(
 
 App::missing(function($exception)
 {
-    return Response::view('errors.index', array(), 404);
+    return Response::view('errors.404', array(), 404);
 });
 
 

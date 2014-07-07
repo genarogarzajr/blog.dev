@@ -14,6 +14,20 @@
     <script src="/bootstrap/assets/js/Chart.js"></script>
 </head>
 <body>
+<div>
+@if(Auth::check())
+    logged in <br>
+<a href="{{ action('HomeController@logout')}}" class="btn btn-default btn-small"> Logout</a> <br>
+{{ link_to_action('PostsController@create', 'New Post', [], ['class' => 'btn btn-success pull-right']) }}
+
+@else
+not logged in<br>
+<a href="{{ action('HomeController@showLogin')}}" class="btn btn-default btn-small"> Login</a>
+@endif
+
+</div>
+
+
 
     <div>
         @if (Session::has('successMessage'))

@@ -41,3 +41,8 @@ var demoCount = 0;
 
 
 		});
+
+		$('.back').click(function(){
+
+			window.history.back()
+		});

@@ -6,9 +6,15 @@
     {{$errors->first('title', '<span class="help-block">:message</span>')}}
     @endif
 
-{{ Form::open(array('action'=>'PostsController@store')) }}
-    {{ Form::label('title', 'Title')}}
+{{ Form::open(array('action'=>'PostsController@store', array('class' => 'form-horizontal')) }}
+    
+<div class="form-group">    
+    {{ Form::label('title', 'Title', array('class' => ))}}
+    <div class="col-sm-10">
     {{ Form::text('title') }}
+    </div>
+</div>
+
 
         <br>
         <label for="body">New Blog body</label>      
