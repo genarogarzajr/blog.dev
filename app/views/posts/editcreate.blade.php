@@ -3,7 +3,7 @@
 @section('contents')
 
 
-<div class="container col-md-8">
+<div class="container">
 	<h2>Create New Post</h2>
 
 	@if (isset($post))
@@ -36,6 +36,8 @@ Markdown Preview
 
 {{ Form::submit('Submit', array('class' => 'btn btn-default')) }}
 {{ Form::close() }}
+</div>
+@stop
 
 @section('bottom')
 <script type="text/javascript">
@@ -43,9 +45,4 @@ var converter = Markdown.getSanitizingConverter();
 var editor = new Markdown.Editor(converter);
 editor.run();
 </script>
-
-
-
-
-
 @stop
