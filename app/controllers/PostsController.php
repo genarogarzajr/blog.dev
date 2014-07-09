@@ -76,6 +76,15 @@ public function __construct()
 		    $post->title = Input::get('title');
 		    $post->body = Input::get('body');
 		    $post->save();
+
+		    if (Input::hasFile('image') && Input::file('image')->isValid())
+		    {
+		    	$post->addUploadedImage(Input::file('image'));
+		    	$post->save();
+		    }
+
+
+
 			return Redirect::action('PostsController@index');
 			}
 		
@@ -127,6 +136,12 @@ public function __construct()
 	    $post->title = Input::get('title');
 	    $post->body = Input::get('body');
 	    $post->save();
+
+	    if (Input::hasFile('image') && Input::file('image')->isValid())
+		    {
+		    	$post->addUploadedImage(Input::file('image'));
+		    	$post->save();
+		    }
 		return Redirect::action('PostsController@index');
 	}
 

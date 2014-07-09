@@ -12,20 +12,46 @@
 	 <script src="/bootstrap/assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="/bootstrap/assets/js/smoothscroll.js"></script> 
     <script src="/bootstrap/assets/js/Chart.js"></script>
+
+
+
+    <!-- Pagedown WYSIWYG editor files -->
+     <link rel="stylesheet" type="text/css" href="/pagedown/demo/browser/demo.css" />
+        
+    <script type="text/javascript" src="/pagedown/Markdown.Converter.js"></script>
+    <script type="text/javascript" src="/pagedown/Markdown.Sanitizer.js"></script>
+    <script type="text/javascript" src="/pagedown/Markdown.Editor.js"></script>
+
 </head>
 <body>
-<div>
-@if(Auth::check())
-    logged in <br>
-<a href="{{ action('HomeController@logout')}}" class="btn btn-default btn-small"> Logout</a> <br>
-{{ link_to_action('PostsController@create', 'New Post', [], ['class' => 'btn btn-success pull-right']) }}
+<div class="container">
+    @if(Auth::check())
+        logged in <br>
+    <div class="col-md-1">
+        <a href="{{ action('HomeController@logout')}}" class="btn btn-default btn-small"> Logout</a> <br>
+    </div> <!-- class="col-md-1" -->
+   
+    <div class="col-md-10"></div>
+   
+    <div class="col-md-1">
+    {{ link_to_action('PostsController@create', 'New Post', [], ['class' => 'btn btn-success pull-right']) }}
+    </div> <!-- class="col-md-1" -->
+    
+    @else
+    not logged in<br>
+    <div class="col-md-1">
+        <a href="{{ action('HomeController@showLogin')}}" class="btn btn-default btn-small"> Login</a>
+    </div> <!-- class="col-md-1" -->
+    
+    <div class="col-md-10"></div>
 
-@else
-not logged in<br>
-<a href="{{ action('HomeController@showLogin')}}" class="btn btn-default btn-small"> Login</a>
-@endif
+    <div class="col-md-1">
+    {{ link_to_action('PostsController@create', 'New Post', [], ['class' => 'btn btn-success pull-right']) }}
+    </div> <!-- class="col-md-1" -->
+    @endif
 
-</div>
+</div> <!-- class="container" -->
+
 
 
 
@@ -40,6 +66,6 @@ not logged in<br>
         @yield('contents')
     </div>
 
-
+@yield('bottom')
 </body>
 </html>

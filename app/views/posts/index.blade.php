@@ -15,7 +15,7 @@
         <tr>
            <td>{{ link_to_action('PostsController@show', $post->title, array($post->id)) }}</td>
             				<!-- same as -->
-            <!-- <td><a href="{{ action('PostsController@show', $post->id) }}">{{{ $post->title }}}</a></td> -->
+      <!-- <td><a href="{{ action('PostsController@show', $post->id) }}">{{{ $post->title }}}</a></td> -->
            
            <td>{{$post->user->email}}</td>
            <td>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</td>
@@ -24,7 +24,11 @@
         @endforeach
     </table>
 
-   {{ $posts->links() }}
+
+<!-- // paginator -->
+   <!-- {{ $posts->links() }} -->
+	
+
 	<div>
 	  {{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET'))}}
 	  
@@ -38,8 +42,10 @@
 </div>	  
 		{{ Form::close() }}
 
+<div class="container">
+<!-- // paginator -->
 {{ $posts->appends(['search' => Input::get('search')])->links() }}
-   
+ </div>  
 @stop
 
 
