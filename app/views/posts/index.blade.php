@@ -2,7 +2,7 @@
 
 @section('contents')
 <div class="container">
-   <h1>All the Posts </h1>
+   <h1>My Deepest Darkest Thoughts </h1>
 
  
 @foreach ($posts as $post)	
@@ -10,13 +10,13 @@
 <div class="blog-post">
 	<h1>{{ link_to_action('PostsController@show', $post->title, array($post->id)) }}</h1>
 <p class="lead">by {{$post->user->email}}</p>
-
-<hr>
-<p><span class="glyphicon glyphicon-time"></span> {{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
   
-  <hr>
+ 
 
 <p><p>{{$post->RenderBody() }}</p></p>
+
+
+<p><span class="glyphicon glyphicon-time"></span> {{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
 
 <a class="btn btn-primary" href="{{ action('PostsController@show', $post->id) }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
@@ -25,6 +25,10 @@
 		{{ Form::close() }}
 
 <div class="container">
+
+
+
+
 
 <!-- // paginator version 1-->
 <!-- {{ $posts->links() }} -->

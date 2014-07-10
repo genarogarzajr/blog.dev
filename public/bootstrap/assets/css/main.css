@@ -7,6 +7,9 @@
  */
 
 body {
+  background: url(/img/xenomorph.jpg);
+  background-size: 100%;
+ background-attachment: fixed;
   background-color: #f2f2f2;
     font-family: "Lato";
     font-weight: 300;
@@ -21,7 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: #333;
+    color: white;
 }
 
 
@@ -212,7 +215,7 @@ a:after {
 }
 
 #skillswrap h5, p {
-	color: black;
+	color: white;
 }
 
 #footwrap {
