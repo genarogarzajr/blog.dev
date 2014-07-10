@@ -22,7 +22,7 @@
         
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
-
+New User?  Sign up
     </div> 
 
 <div class="container col-md-4"></div>

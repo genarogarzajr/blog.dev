@@ -36,7 +36,8 @@ Markdown Preview
 
 {{ Form::submit('Submit', array('class' => 'btn btn-default')) }}
 {{ Form::close() }}
-</div>
+
+</div> <!-- class="container" -->
 @stop
 
 @section('bottom')

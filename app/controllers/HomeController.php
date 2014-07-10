@@ -72,6 +72,10 @@ class HomeController extends BaseController {
 		return View::make('portfolio');
 	}
 
+public function navbar()
+	{
 
+		return View::make('navbar');
+	}
 
 }

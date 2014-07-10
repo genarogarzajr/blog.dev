@@ -58,7 +58,7 @@ Route::get('orm-test', function () {
     return "ORM is awesome";
 });
 
-
+Route::get('navbar', 'HomeController@navbar');
 
 
 

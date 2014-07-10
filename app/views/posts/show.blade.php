@@ -24,14 +24,30 @@
 
 
 	{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}} <br>
-	<a href="{{ action('PostsController@edit', $post->id) }}" class="btn btn-default btn">Edit</a>
+	
+
+	
 
 
-	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }}
+	<!-- {{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE')) }} -->
 
 	<!-- <a href="{{ action('PostsController@destroy', $post->id) }}" class="btn btn-danger">Delete-href</a> -->
 	<!-- same as -->
-	{{ Form::submit('Delete-form', array('class' => 'btn btn-danger')) }}
+	<!-- {{ Form::submit('Delete-form', array('class' => 'btn btn-danger')) }} -->
+
+
+
+@if (Auth::check())
+	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'id' => 'deleteForm', 'method' => 'DELETE')) }}
+	{{ Form::close() }}
+	
+   	<a href="{{ action('PostsController@edit', $post->id) }}" class="btn btn-default btn-sm">Edit</a>
+
+   	<a href="#" class="deletePost btn-danger btn-sm" data-postid="{{ $post->id }}">Delete</a>
+
+@endif
+
+
 
 </div>  <!-- class="container"  --> 
 {{ Form::close() }}
@@ -57,7 +73,15 @@
 
 @stop
 
-
+@section('bottom')
+<script type="text/javascript">
+   $(".deletePost").click(function() {
+       if(confirm("Are you sure you want to delete post")) {
+           $('#deleteForm').submit();
+       }
+   });
+</script>
+@stop
 
 
 
