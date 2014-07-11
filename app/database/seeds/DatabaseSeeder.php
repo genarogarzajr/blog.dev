@@ -24,22 +24,14 @@ class UserTableSeeder extends Seeder {
         DB::table('users')->delete();
 
         $user = new User();
-        $user->email = 'admin@codeup.com';
-        $user->password = Hash::make('adminPass123!');
+        $user->email = $_ENV['ADMIN_USER'];
+        $user->password = Hash::make($_ENV['ADMIN_PASS']);
         $user->save();
-
-        $user = new User();
-        $user->email = 'genaro@codeup.com';
-        $user->password = Hash::make('adminPass123!');
-        $user->save();
-
-
-
 
         for ($i=1; $i <= 10; $i++) 
         { 
 	        $post = new Post();
-	        $post->user_id = rand(1,2);
+	        $post->user_id = 1;
 	        $post->title = "New post title " . $i;
 	        $post->body = "New post body ". $i;
 	        $post->save();

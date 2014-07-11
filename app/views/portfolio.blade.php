@@ -2,9 +2,9 @@
 
 @section('contents')
    <!-- Add custom CSS here -->
-    <link href="/bootstrap/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/bootstrap/assets/css/stylish-portfolio.css" rel="stylesheet">
     <link href="/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/bootstrap/css/my_settings.css" rel="stylesheet">
+    <link href="/bootstrap/assets/css/my_settings.css" rel="stylesheet">
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">

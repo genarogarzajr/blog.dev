@@ -15,6 +15,16 @@ class HomeController extends BaseController {
 	|
 	*/
 
+public function startPage()
+	{
+		return View::make('temp.my-first-view');
+	}
+
+
+
+
+
+
 //--------------------------------------	
 	public function showLogin()
 	{

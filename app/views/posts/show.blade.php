@@ -14,7 +14,7 @@
 
    	<a href="{{ action('PostsController@edit', $post->id) }}" class="btn btn-default btn-sm">Edit</a>
 
-   	<a href="#" class="deletePost btn-danger btn-sm" data-postid="{{ $post->id }}">Delete</a>
+   	<a href="#" class="deletePost btn btn-danger btn-sm" data-postid="{{ $post->id }}">Delete</a>
 
 @endif
 

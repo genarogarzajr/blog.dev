@@ -4,33 +4,31 @@
     <title>master.blade.php</title>
     <!-- jQuery code -->
     <script src="/js/jquery211.js"></script>
-   
+    <script src="/bootstrap/assets/js/Chart.js"></script>
 
 
 
-    <!-- Bootstrap core CSS -->
-    <link href="/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap core CSS -->   
     <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap-theme.css">
-
+    <link rel="stylesheet" href="/bootstrap/assets/css/stylish-portfolio.css">
+    
     <!-- Latest compiled and minified JavaScript -->
     <script src="/bootstrap/assets/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="/bootstrap/assets/css/main.css" rel="stylesheet">
-  
-    
-	<link rel="stylesheet" href="/bootstrap/assets/css/font-awesome.min.css">
-	<script src="/bootstrap/assets/js/jquery.min.js"></script>
+    <link href="/bootstrap/assets/css/my_settings.css" rel="stylesheet">    
+	<link href="/bootstrap/assets/css/font-awesome.min.css" rel="stylesheet">
+	
     <script type="text/javascript" src="/bootstrap/assets/js/smoothscroll.js"></script> 
     <script src="/bootstrap/assets/js/Chart.js"></script>
 
     
     <!-- Pagedown WYSIWYG editor files -->
-     <link rel="stylesheet" type="text/css" href="/pagedown/demo/browser/demo.css" />
+     <link href="/pagedown/demo/browser/demo.css" rel="stylesheet" type="text/css"  />
         
     <script type="text/javascript" src="/pagedown/Markdown.Converter.js"></script>
     <script type="text/javascript" src="/pagedown/Markdown.Sanitizer.js"></script>
@@ -58,7 +56,8 @@
       <ul class="nav navbar-nav">
         <li><a href="{{ action('PostsController@index')}}">Home Index</a></li>
         <li><a href="{{ action('PostsController@create')}}">New Post</a></li>
-        
+        <li><a href="{{ action('HomeController@resume')}}">Resume</a></li>
+        <li><a href="{{ action('HomeController@portfolio')}}">Portfolio</a></li>
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -69,8 +68,9 @@
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
             <li><a href="#">One more separated link</a></li>
-          </ul> -->
-        </li>
+          </ul>
+        </li> -->
+        
       </ul>
       
 
@@ -82,6 +82,7 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       
+
 
 
       <ul class="nav navbar-nav navbar-right">
