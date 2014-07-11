@@ -11,16 +11,17 @@
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap-theme.css">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/bootstrap/assets/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="/bootstrap/assets/css/main.css" rel="stylesheet">
+  
     
 	<link rel="stylesheet" href="/bootstrap/assets/css/font-awesome.min.css">
 	<script src="/bootstrap/assets/js/jquery.min.js"></script>
@@ -39,7 +40,7 @@
 <body>
 
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-pills navbar-fixed-top opaque" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -49,14 +50,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ action('PostsController@index')}}">Home</a>
+      <a class="navbar-brand" href="#"><img src="/img/g.png" width="30" height="30"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="{{ action('PostsController@create')}}">New Post</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="{{ action('PostsController@index')}}">Home Index</a></li>
+        <li><a href="{{ action('PostsController@create')}}">New Post</a></li>
+        
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">

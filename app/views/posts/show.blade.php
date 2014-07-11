@@ -7,7 +7,7 @@
 	<!-- <a href="{{ action('PostsController@destroy', $post->id) }}" class="btn btn-danger">Delete-href</a> -->
 	<!-- same as -->
 	<!-- {{ Form::submit('Delete-form', array('class' => 'btn btn-danger')) }} -->
-
+<div class="container">
 @if (Auth::check())
 	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'id' => 'deleteForm', 'method' => 'DELETE')) }}
 	{{ Form::close() }}

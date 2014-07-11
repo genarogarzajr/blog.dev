@@ -7,24 +7,30 @@
  */
 
 body {
-  background: url(/img/xenomorph.jpg);
+/*  background: url(/img/xenomorph.jpg);
   background-size: 100%;
- background-attachment: fixed;
+ background-attachment: fixed;*/
   background-color: #f2f2f2;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
     color: #555;
+    padding-top: 70px;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
 
+.opaque {
+     background-color: #A1A1A1;   
+    }
+
+
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: white;
+    color: black;
 }
 
 
@@ -40,7 +46,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: black;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -196,7 +202,7 @@ a:after {
 } 
 
 #intro h5, p {
-	color: white;
+	color: black
 }
 
 #intro i {
@@ -215,7 +221,7 @@ a:after {
 }
 
 #skillswrap h5, p {
-	color: white;
+	color: black;
 }
 
 #footwrap {
