@@ -1,5 +1,5 @@
-@extends('layouts.master')
 
+test
 @section('contents')
    <!-- Add custom CSS here -->
     <link href="/bootstrap/assets/css/stylish-portfolio.css" rel="stylesheet">
@@ -10,18 +10,18 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="http://startbootstrap.com">Genaro Garza</a>
-            </li>
-            <li><a href="#top">Home</a>
-            </li>
-            <li><a href="#about">About</a>
-            </li>
-            <li><a href="#services">Services</a>
-            </li>
-            <li><a href="#portfolio">Portfolio</a>
-            </li>
-            <li><a href="#contact">Contact</a>
-            </li>
+            <li class="sidebar-brand"><a href="http://startbootstrap.com">Genaro Garza</a></li>
+            
+            <li><a href="#top">Home</a></li>
+            
+            <li><a href="#about">About</a></li>
+            
+            <li><a href="#services">Services</a></li>
+            
+            <li><a href="#portfolio">Portfolio</a></li>
+            
+            <li><a href="#contact">Contact</a></li>
+            
         </ul>
     </div>
     <!-- /Side Menu -->
