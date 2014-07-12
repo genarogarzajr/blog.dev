@@ -1,5 +1,5 @@
+@extends('layouts.master')
 
-test
 @section('contents')
    <!-- Add custom CSS here -->
     <link href="/bootstrap/assets/css/stylish-portfolio.css" rel="stylesheet">
