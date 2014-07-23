@@ -95,8 +95,10 @@
 
 
 <div class="container">
+
+	<h2>My work experience.  Click on each to expand.</h2>
 <div class="panel-group" id="accordion">
-					  <div class="panel panel-default">
+					  <div class="panel panel-default ">
 							    <div class="panel-heading">
 							      <h4 class="panel-title">
 							        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
@@ -106,7 +108,7 @@
 							    </div>
 					    
 
-						<div id="collapseOne" class="panel-collapse collapse in">					      
+						<div id="collapseOne" class="panel-collapse collapse">					      
 							      <div class="panel-body">
 							        				
 									HCA Corp.<br>08/2008 - 05/2014
@@ -138,22 +140,22 @@
 					  </div>
 
 
-	  <div class="panel panel-default">
-		    <div class="panel-heading">
-			      <h4 class="panel-title">
-			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-			          IT Contractor
-			        </a>
-			      </h4>
-		    </div>
+					  <div class="panel panel-default">
+						    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							          IT Contractor
+							        </a>
+							      </h4>
+						    </div>
 		    
-		    <div id="collapseTwo" class="panel-collapse collapse">
-			      <div class="panel-body">
-			      	Technisource<br>
-			      	3/08 – 10/08<br>              
-			        •	Worked for HCA Physician Support team to support Doctors on the new HCA web portal
-			      </div>
-		    </div>
+					    <div id="collapseTwo" class="panel-collapse collapse">
+						      <div class="panel-body">
+						      	Technisource<br>
+						      	3/08 – 10/08<br>              
+						        •	Worked for HCA Physician Support team to support Doctors on the new HCA web portal
+						      </div>
+					    </div>
 	  </div>
 
   <div class="panel panel-default">

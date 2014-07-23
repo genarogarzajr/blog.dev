@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
     <title>master.blade.php</title>
-    <!-- jQuery code -->
+    <!-- javascript code -->
     <script src="/js/jquery211.js"></script>
     <script src="/bootstrap/assets/js/Chart.js"></script>
+    <script type="text/javascript" src="/bootstrap/assets/js/smoothscroll.js"></script> 
+    <script src="/bootstrap/assets/js/Chart.js"></script>
 
-
-
+    <script src="/bootstrap/assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap core CSS -->
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->   
-    <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap.css">
+   <!--  <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap.css"> -->
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/bootstrap/assets/css/stylish-portfolio.css">
     
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="/bootstrap/assets/js/bootstrap.min.js"></script>
+    
 
     <!-- Custom styles for this template -->
     <link href="/bootstrap/assets/css/main.css" rel="stylesheet">
     <link href="/bootstrap/assets/css/my_settings.css" rel="stylesheet">    
 	<link href="/bootstrap/assets/css/font-awesome.min.css" rel="stylesheet">
 	
-    <script type="text/javascript" src="/bootstrap/assets/js/smoothscroll.js"></script> 
-    <script src="/bootstrap/assets/js/Chart.js"></script>
+    
 
     
     <!-- Pagedown WYSIWYG editor files -->
@@ -113,11 +114,9 @@
         @endif
         @if (Session::has('errorMessage'))
             <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
-        @endif
-
-        @yield('contents')
+        @endif        
     </div>
-
+@yield('contents')
 @yield('bottom')
 
 </body>

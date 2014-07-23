@@ -5,6 +5,7 @@
     <link href="/bootstrap/assets/css/stylish-portfolio.css" rel="stylesheet">
     <link href="/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/bootstrap/assets/css/my_settings.css" rel="stylesheet">
+    
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">
@@ -44,7 +45,11 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <h2>Welcome to my journey into web development!</h2>
-                    <p class="lead">Below you will find examples of my work.  </a>.</p>
+                    <p class="lead">After nearly 20 years in the hardware side of IT, 
+                        I decided to change course and study to become a web developer.  
+                        The curricula has been challenging to say the least and i have much to learn.  
+                        I hope to one day get a job where I can code with a team and learn from their experience.  
+                        <br> Below you will find examples of my work.  </a>.</p>
                 </div>
             </div>
         </div>
@@ -55,13 +60,13 @@
     <div id="services" class="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-2  text-center">
                     <h2>My Skills</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 col-md-offset-2 text-center">
+                <div class="col-md-2  text-center">
                     <div class="service-item">
                         <i class="service-icon fa fa-html5"></i>
                         <h4>HTML</h4>
@@ -85,10 +90,26 @@
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="service-icon fa fa-cogs"></i>
-                        <h4>jquery</h4>
+                        <h4>Javascript</h4>
                         <p>beginner</p>
                     </div>
                 </div>
+                <div class="col-md-2 text-center">
+                    <div class="service-item">
+                        <i class="service-icon fa fa-cogs"></i>
+                        <h4>jQuery</h4>
+                        <p>beginner</p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                        <div class="service-item">
+                            <i class="service-icon fa fa-cogs"></i>
+                            <h4>Laravel</h4>
+                            <p>beginner</p>
+                        </div>
+                    </div>
+
+
             </div>
         </div>
     </div>
@@ -157,7 +178,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <h3>Contact me</h3>
-                    <a href="#" class="btn btn-lg btn-default">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-default">email</a>
                     <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
                 </div>
             </div>
@@ -166,6 +187,7 @@
     <!-- /Call to Action -->
 
     <!-- Map -->
+   <!--  <div class="container">
     <div id="contact" class="map">
         <iframe width="50%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="25" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=112+E+Pecan+St,+San+Antonio,+TX&amp;aq=&amp;sll=29.481431,-98.514404&amp;sspn=0.698152,1.234589&amp;ie=UTF8&amp;hq=&amp;hnear=112+E+Pecan+St,+San+Antonio,+Texas+78205&amp;ll=29.428229,-98.492384&amp;spn=0.010914,0.01929&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
@@ -177,14 +199,30 @@
         <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
-        </iframe>
+        </iframe> -->
             <!-- <div id="test"> -->
                 
 
 
             <!-- </div> -->
-    </div>
+    <!-- </div> id="contact" class="map" -->
+<!-- </div> class="container" -->
     <!-- /Map -->
+
+
+<div class="container">
+<h3>Send me an email</h3>
+
+
+
+
+
+</div>
+
+
+
+
+
 
     <!-- Footer -->
     <footer>
@@ -203,7 +241,7 @@
                         <a href="#top"><i class="fa fa-arrow-circle-up scroll fa-4x"></i></a>
                     </div>
                     <hr>
-                    <p>Copyright &copy; Company 2013</p>
+                    <p>Copyright &copy; Genarogarzajr.com 2013</p>
                 </div>
             </div>
         </div>
