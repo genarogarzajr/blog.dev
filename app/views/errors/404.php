@@ -7,7 +7,7 @@
 
   <title>404 - Back to the Future - CodePen</title>
 
-    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="bootstrap/assets/css/style.css" media="screen" type="text/css" />
 
 </head>
 

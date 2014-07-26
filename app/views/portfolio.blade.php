@@ -5,7 +5,7 @@
     <link href="/bootstrap/assets/css/stylish-portfolio.css" rel="stylesheet">
     <link href="/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/bootstrap/assets/css/my_settings.css" rel="stylesheet">
-    
+    <link href="/bootstrap/assets/css/font-mfizz.css" rel="stylesheet"  />
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">
@@ -68,51 +68,67 @@
             <div class="row">
                 <div class="col-md-2  text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-html5"></i>
+                        <i class="step icon-html size-72 php"></i>
                         <h4>HTML</h4>
-                        <p>intermediate</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-css3"></i>
+                        <i class="step icon-css size-72 php"></i>
                         <h4>CSS</h4>
-                        <p>beginner</p>
+                        <p></p>
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
-                    <div class="service-item">
-                        <i class="service-icon fa fa-code"></i>
+
+
+                <div class="col-md-2 text-center glyph">
+                    <div class="preview-glyphs">
+                        <i class="step icon-php size-72 php"></i>
                         <h4>PHP</h4>
-                        <p>beginner</p>
+                        <p></p>
                     </div>
                 </div>
+                <div class="col-md-2 text-center glyph">
+                    <div class="preview-glyphs">
+                        <i class="step icon-mysql size-72 php"></i>
+                        <h4>MYSQL</h4>
+                        <p></p>
+                    </div>
+                </div>
+
+            </div> <!-- class="row" -->
+
+
+
+            <div class="row">
+                
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-cogs"></i>
+                        <i class="step icon-javascript size-72 php"></i>
                         <h4>Javascript</h4>
-                        <p>beginner</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="service-icon fa fa-cogs"></i>
                         <h4>jQuery</h4>
-                        <p>beginner</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                         <div class="service-item">
                             <i class="service-icon fa fa-cogs"></i>
                             <h4>Laravel</h4>
-                            <p>beginner</p>
+                            <p></p>
                         </div>
                     </div>
 
 
-            </div>
-        </div>
-    </div>
+            </div> <!-- class="row" -->
+        </div> <!-- class="container" -->
+    </div>  <!-- id="services" class="services" -->
     <!-- /Services -->
 
     <!-- Callout -->
