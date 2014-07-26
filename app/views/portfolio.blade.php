@@ -6,6 +6,9 @@
     <link href="/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/bootstrap/assets/css/my_settings.css" rel="stylesheet">
     <link href="/bootstrap/assets/css/font-mfizz.css" rel="stylesheet"  />
+    <!-- <link href="/bootstrap/assets/css/demo.css" rel="stylesheet">
+    <link  href="/bootstrap/assets/css/style.css" rel="stylesheet"></head> -->
+    
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">
@@ -97,12 +100,6 @@
                     </div>
                 </div>
 
-            </div> <!-- class="row" -->
-
-
-
-            <div class="row">
-                
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="step icon-javascript size-72 php"></i>
@@ -110,6 +107,13 @@
                         <p></p>
                     </div>
                 </div>
+
+            </div> <!-- class="row" -->
+
+
+
+            <div class="row">
+                                
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="service-icon fa fa-cogs"></i>
@@ -118,15 +122,15 @@
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
-                        <div class="service-item">
-                            <i class="service-icon fa fa-cogs"></i>
-                            <h4>Laravel</h4>
-                            <p></p>
-                        </div>
+                    <div class="service-item">
+                        <i class="laravel icon-sign-laravel"></i>
+                        <h4>Laravel</h4>
+                        <p></p>
                     </div>
-
+                </div>
 
             </div> <!-- class="row" -->
+
         </div> <!-- class="container" -->
     </div>  <!-- id="services" class="services" -->
     <!-- /Services -->
@@ -151,7 +155,7 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-2 text-center">
                     <div class="portfolio-item">
-                        <a href="#">
+                        <a href="https://github.com/genarogarzajr/Codeup_Exercises/blob/master/fizz.php">
                             <img class="img-portfolio img-responsive" src="img/fizz_win7desktop2.jpg">
                         </a>
                         <h4>FizzBuzz</h4>
@@ -159,7 +163,7 @@
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="portfolio-item">
-                        <a href="#">
+                        <a href="https://github.com/genarogarzajr/Web_Todo_List/blob/master/public/todo_list.php">
                             <img class="img-portfolio img-responsive" src="img/todo_win7desktop.jpg">
                         </a>
                         <h4>ToDo List</h4>
@@ -169,7 +173,7 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-2 text-center">
                     <div class="portfolio-item">
-                        <a href="#">
+                        <a href="https://github.com/genarogarzajr/Codeup_Exercises/blob/master/palindrome.php">
                             <img class="img-portfolio img-responsive" src="img/palindrome.png">
                         </a>
                         <h4>Palindrome</h4>
