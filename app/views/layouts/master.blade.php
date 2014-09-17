@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>master.blade.php</title>
+    <title>Genaro Garza</title>
     <!-- javascript code -->
     <script src="/js/jquery211.js"></script>
     <script src="/bootstrap/assets/js/Chart.js"></script>

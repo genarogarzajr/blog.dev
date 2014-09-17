@@ -121,55 +121,57 @@
                         <p></p>
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
-                    <div class="service-item">
-                        <i class="laravel icon-sign-laravel"></i>
-                        <h4>Laravel</h4>
-                        <p></p>
-                    </div>
-                </div>
-
+                
+                <div class="clearfix mhl ptl">
+        <div class="glyph fs1">
+            <div class="clearfix bshadow0 pbs">
+                <span class="laravel icon-sign-laravel"></span>
+                <h4>Laravel</h4>
+            </div>  
+        </div> <!-- class="glyph fs1"> -->
+    </div> <!-- class="clearfix mhl ptl" -->
+            
             </div> <!-- class="row" -->
-
         </div> <!-- class="container" -->
     </div>  <!-- id="services" class="services" -->
     <!-- /Services -->
 
-    <!-- Callout -->
-                                       <!--  <div class="callout">
-                                            <div class="vert-text">
-                                                <h1>A Dramatic Text Area</h1>
-                                            </div>
-                                        </div> -->
-    <!-- /Callout -->
+    
 
     <!-- Portfolio -->
     <div id="portfolio" class="portfolio">
         <div class="container">
+            
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <h2>My Portfolio</h2>
                     <hr>
-                </div>
-            </div>
+                </div> <!-- class="col-md-4 col-md-offset-4 text-center" -->
+            </div> <!-- class="row" -->
+            
             <div class="row">
+                
                 <div class="col-md-4 col-md-offset-2 text-center">
                     <div class="portfolio-item">
                         <a href="https://github.com/genarogarzajr/Codeup_Exercises/blob/master/fizz.php">
                             <img class="img-portfolio img-responsive" src="img/fizz_win7desktop2.jpg">
                         </a>
                         <h4>FizzBuzz</h4>
-                    </div>
-                </div>
+                    </div> <!-- class="portfolio-item" -->
+                </div> <!-- class="col-md-4 col-md-offset-2 text-center" -->
+                
                 <div class="col-md-4 text-center">
                     <div class="portfolio-item">
                         <a href="https://github.com/genarogarzajr/Web_Todo_List/blob/master/public/todo_list.php">
                             <img class="img-portfolio img-responsive" src="img/todo_win7desktop.jpg">
                         </a>
                         <h4>ToDo List</h4>
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- class="portfolio-item" -->
+                </div> <!-- class="col-md-4 text-center" -->
+            
+            </div> <!-- class="row" -->
+            
+
             <div class="row">
                 <div class="col-md-4 col-md-offset-2 text-center">
                     <div class="portfolio-item">
@@ -179,17 +181,20 @@
                         <h4>Palindrome</h4>
                     </div>
                 </div>
+                
                 <div class="col-md-4 text-center">
                     <div class="portfolio-item">
                         <a href="#">
                             <img class="img-portfolio img-responsive" src="img/add_win7desktop.jpg">
                         </a>
                         <h4>Address Book</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    </div>  <!-- class="portfolio-item" -->
+                </div> <!-- class="col-md-4 text-center" -->
+            
+            </div> <!-- class="row" -->
+        
+        </div> <!-- class="container" -->
+    </div> <!-- id="portfolio" class="portfolio" -->
     <!-- /Portfolio -->
 
     <!-- Call to Action -->
