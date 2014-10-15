@@ -75,8 +75,8 @@
                         <i class="step icon-html size-72 php"></i>
                         <h4>HTML</h4>
                         <p></p>
-                    </div>
-                </div>
+                    </div> <!-- class="service-item" -->
+                </div> <!-- class="col-md-2  text-center" -->
                 
                 <div class="col-md-2 text-center">
                     <div class="service-item">
@@ -102,19 +102,21 @@
                     </div>
                 </div>
 
+                
+        </div> <!-- class="row" -->
+
+
+
+            <div class="row">
+
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="step icon-javascript size-72 php"></i>
                         <h4>Javascript</h4>
                         <p></p>
-                    </div>
-        </div>
+                    </div> <!-- class="service-item" -->
+                </div> <!-- class="col-md-2 text-center" -->
 
-            </div> <!-- class="row" -->
-
-
-
-            <div class="row">
                                 
                 <div class="col-md-2 text-center">
                     <div class="service-item">
@@ -124,7 +126,7 @@
                     </div>
                 </div>
                 
-                <div class="clearfix mhl ptl">
+                <div class="col-md-2 text-center">
                     <div class="glyph fs1">
                         <div class="clearfix bshadow0 pbs">
                             <span class="laravel icon-sign-laravel"></span>

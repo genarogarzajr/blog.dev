@@ -16,18 +16,18 @@
     <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/bootstrap/assets/css/stylish-portfolio.css">
     
-    
-
     <!-- Custom styles for this template -->
     <link href="/bootstrap/assets/css/main.css" rel="stylesheet">
     <link href="/bootstrap/assets/css/my_settings.css" rel="stylesheet">    
 	<link href="/bootstrap/assets/css/font-awesome.min.css" rel="stylesheet">
-	
-    
-
-    
+	  
     <!-- Pagedown WYSIWYG editor files -->
      <link href="/pagedown/demo/browser/demo.css" rel="stylesheet" type="text/css"  />
+
+     <!-- Laravel icon files -->
+     <link rel="stylesheet" href="laravel-demo.css">
+    <link rel="stylesheet" href="laravel-style.css">
+    <script src="demo-files/demo.js"></script>
         
     <script type="text/javascript" src="/pagedown/Markdown.Converter.js"></script>
     <script type="text/javascript" src="/pagedown/Markdown.Sanitizer.js"></script>
