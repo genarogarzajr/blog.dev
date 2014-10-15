@@ -6,13 +6,11 @@
     <script src="/js/jquery211.js"></script>
     <script src="/bootstrap/assets/js/Chart.js"></script>
     <script type="text/javascript" src="/bootstrap/assets/js/smoothscroll.js"></script> 
-    <script src="/bootstrap/assets/js/Chart.js"></script>
-
     <script src="/bootstrap/assets/js/bootstrap.min.js"></script>
-<!-- Bootstrap core CSS -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->   
-   <!--  <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap.css"> -->
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">    
+    <!--  <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap.css"> -->
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="/bootstrap/assets/css/bootstrap-theme.css">
@@ -74,7 +72,7 @@
         
       </ul>
       
-
+/
 
       <form method="GET" action="http://blog.dev/posts" class="navbar-form navbar-left" role="search">
         <div class="form-group">

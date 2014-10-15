@@ -23,12 +23,12 @@
 		</div><!--/ #topbar-inner -->
 	</div><!--/ #section-topbar -->
 	
-	<div id="headerwrap">
+	<div id="headerwrap" style="margin-top:0px">
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-12">
 					<h1>Genaro Garza</h1>
-					<h3>Web Designer | Genaro@codeup.com</h3>
+					<h3>Web Designer | Genarogarzajr@gmail.com</h3>
 				</div><!--/.col-lg-12 -->
 			</div><!--/.row -->
 		</div><!--/.container -->
@@ -41,13 +41,13 @@
 			<div class="row">
 				
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ABOUT</h5>
+					<h2>ABOUT</h2>
 				</div>
 				<div class="col-lg-6">
-					<p>I'm a longtime IT tech with a focus on hardware.  Recently I decided to switch to web development</p>
+					<p><h2>I'm a longtime IT tech with a focus on hardware.  Recently I decided to switch to web development</h2></p>
 				</div>
 				<div class="col-lg-3">
-					<p><a href="#"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+					<p><a href="! Genaro Garza Resume - 2014 v3.docx"><i class="icon-file"></i></a> <sm>DOWNLOAD RESUME</sm></p>
 				</div>
 				
 			</div><!--/.row -->
@@ -61,7 +61,7 @@
 		<div class="row">
 
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>EDUCATION</h5>
+					<h2>EDUCATION</h2>
 				</div>
 				<div class="col-lg-6">
 					<p><t>Web Developer</t><br/>
@@ -70,8 +70,8 @@
 					</p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>Graduating in August</sm><br/>
-					<imp><sm>IN PROGRESS</sm></imp>
+					<p><sm>Graduated 2014</sm><br/>
+					
 					</p>
 				</div>
 	
@@ -158,7 +158,7 @@
 					    </div>
 	  </div>
 
-  <div class="panel panel-default">
+ <div class="panel panel-default">
 		    <div class="panel-heading">
 		      <h4 class="panel-title">
 		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
@@ -234,13 +234,13 @@
 						</script>
 					</div>
 					<div class="col-lg-3 centered">
-						<canvas id="wordpress" height="130" width="130"></canvas>
-						<p>Wordpress</p>
+						<canvas id="jquery" height="130" width="130"></canvas>
+						<p>jQuery</p>
 						<br>
 						<script>
 							var doughnutData = [
 									{
-										value: 0,
+										value: 10,
 										color:"#1abc9c"
 									},
 									{
@@ -248,7 +248,7 @@
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+								var myDoughnut = new Chart(document.getElementById("jquery").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
 					
@@ -289,13 +289,13 @@
 						</script>
 					</div>
 					<div class="col-lg-3 centered">
-						<canvas id="illustrator" height="130" width="130"></canvas>
-						<p>CSS</p>
+						<canvas id="MySQL" height="130" width="130"></canvas>
+						<p>MySQL</p>
 						<br>
 						<script>
 							var doughnutData = [
 									{
-										value: 10,
+										value: 40,
 										color:"#1abc9c"
 									},
 									{
@@ -303,7 +303,7 @@
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+								var myDoughnut = new Chart(document.getElementById("MySQL").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
 
@@ -319,14 +319,14 @@
 	<div class="container desc">
 		<div class="row">
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>PORTFOLIO</h5>
+					<h2>PORTFOLIO</h2>
 				</div>
 				<div class="col-lg-6">
 					<p><img class="img-responsive" src="bootstrap/assets/img/port01.jpg" alt=""></p>
 				</div>
 				<div class="col-lg-3">
 					<p>Fizz Buzz</p>
-				<p><more>Epic firstime program designed to test programmers ability to write logic.<br/><br/>
+				<p><more>Epic first time program designed to test programmers ability to write logic.<br/><br/>
 					<sm><i class="icon-tag"></i> design</sm></more> 
 				</p>
 				</div>
@@ -369,24 +369,23 @@
 				</div>
 				<div class="col-lg-6">
 					<p><t>Email</t><br/>
-						genaro@codeup.com <br/>
+						genarogarzajr@gmail.com <br/>
 					</p>
-					<p><t>Address</t><br/>
-						Some Ave. 987 <br/>
-						112 Pecan St. <br/>
+					<p><t>Location</t><br/>
+						
 						San Antonio, TX <br/>
 					</p>
 					<p><t>Phone</t><br/>
 						210-881-7872
-						<object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=1d1bb588af19d8763ab33568a10e113d5684cd24&style=0" /></object> <br/>
+						
 					</p>
 				</div>
 				<div class="col-lg-3">
 					<p><sm>SOCIAL LINKS</sm></p>
 					<p>
 						<a target="_new" href="https://github.com/genarogarzajr"><i class="icon-github"></i></a>
-						<a target="_new" href="#"><i class="icon-twitter"></i></a>
-						<a target="_new" href="#"><i class="icon-facebook"></i></a>
+						<!-- <a target="_new" href="#"><i class="icon-twitter"></i></a>
+						<a target="_new" href="#"><i class="icon-facebook"></i></a> -->
 						<a target="_new" href="http://www.linkedin.com/in/genarogarzajr/"><i class="icon-linkedin"></i></a>
 						
 
@@ -398,7 +397,7 @@
 	
 	<div id="c">
 		<div class="container">
-			<p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+			
 		
 		</div>
 	</div>

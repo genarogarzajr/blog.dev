@@ -68,7 +68,8 @@
                     <hr>
                 </div>
             </div>
-            <div class="row">
+            
+        <div class="row">
                 <div class="col-md-2  text-center">
                     <div class="service-item">
                         <i class="step icon-html size-72 php"></i>
@@ -76,6 +77,7 @@
                         <p></p>
                     </div>
                 </div>
+                
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="step icon-css size-72 php"></i>
@@ -84,7 +86,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-md-2 text-center glyph">
                     <div class="preview-glyphs">
                         <i class="step icon-php size-72 php"></i>
@@ -92,6 +93,7 @@
                         <p></p>
                     </div>
                 </div>
+                
                 <div class="col-md-2 text-center glyph">
                     <div class="preview-glyphs">
                         <i class="step icon-mysql size-72 php"></i>
@@ -106,7 +108,7 @@
                         <h4>Javascript</h4>
                         <p></p>
                     </div>
-                </div>
+        </div>
 
             </div> <!-- class="row" -->
 
@@ -123,13 +125,13 @@
                 </div>
                 
                 <div class="clearfix mhl ptl">
-        <div class="glyph fs1">
-            <div class="clearfix bshadow0 pbs">
-                <span class="laravel icon-sign-laravel"></span>
-                <h4>Laravel</h4>
-            </div>  
-        </div> <!-- class="glyph fs1"> -->
-    </div> <!-- class="clearfix mhl ptl" -->
+                    <div class="glyph fs1">
+                        <div class="clearfix bshadow0 pbs">
+                            <span class="laravel icon-sign-laravel"></span>
+                            <h4>Laravel</h4>
+                        </div>  
+                    </div> <!-- class="glyph fs1"> -->
+                </div> <!-- class="clearfix mhl ptl" -->
             
             </div> <!-- class="row" -->
         </div> <!-- class="container" -->
@@ -192,10 +194,37 @@
                 </div> <!-- class="col-md-4 text-center" -->
             
             </div> <!-- class="row" -->
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 text-center">
+                    <div class="portfolio-item">
+                        <a href="https://github.com/genarogarzajr/Codeup_Exercises/blob/master/palindrome.php">
+                            <img class="img-portfolio img-responsive" src="img/bttf.png">
+                        </a>
+                        <h4>Back to the future game</h4>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-portfolio img-responsive" src="img/ruff.png">
+                        </a>
+                        <h4>Ruff-love.com</h4>
+                    </div>  <!-- class="portfolio-item" -->
+                </div> <!-- class="col-md-4 text-center" -->
+            
+            </div> <!-- class="row" -->
         
         </div> <!-- class="container" -->
     </div> <!-- id="portfolio" class="portfolio" -->
     <!-- /Portfolio -->
+
+
+
+
+
+
 
     <!-- Call to Action -->
     <div class="call-to-action">
@@ -203,8 +232,21 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <h3>Contact me</h3>
-                    <a href="#" class="btn btn-lg btn-default">email</a>
-                    <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
+
+<!-- Do not change the code! -->
+<a id="foxyform_embed_link_593904" href="http://www.foxyform.com/">foxyform</a>
+<script type="text/javascript">
+(function(d, t){
+   var g = d.createElement(t),
+       s = d.getElementsByTagName(t)[0];
+   g.src = "http://www.foxyform.com/js.php?id=593904&sec_hash=e00e861dff2&width=350px";
+   s.parentNode.insertBefore(g, s);
+}(document, "script"));
+</script>
+<!-- Do not change the code! -->
+
+                    <!-- <a href="#" class="btn btn-lg btn-default">email</a> -->
+                    
                 </div>
             </div>
         </div>
@@ -235,14 +277,7 @@
     <!-- /Map -->
 
 
-<div class="container">
-<h3>Send me an email</h3>
 
-
-
-
-
-</div>
 
 
 
@@ -254,19 +289,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    <ul class="list-inline">
+                    <!-- <ul class="list-inline">
                         <li><i class="fa fa-facebook fa-3x"></i>
                         </li>
                         <li><i class="fa fa-twitter fa-3x"></i>
                         </li>
                         <li><i class="fa fa-dribbble fa-3x"></i>
                         </li>
-                    </ul>
+                    </ul> -->
                     <div class="top-scroll">
                         <a href="#top"><i class="fa fa-arrow-circle-up scroll fa-4x"></i></a>
                     </div>
                     <hr>
-                    <p>Copyright &copy; Genarogarzajr.com 2013</p>
+                    <p>Copyright &copy; Genarogarzajr.com 2014</p>
                 </div>
             </div>
         </div>
