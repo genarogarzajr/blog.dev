@@ -200,7 +200,7 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-2 text-center">
                     <div class="portfolio-item">
-                        <a href="https://github.com/genarogarzajr/Codeup_Exercises/blob/master/palindrome.php">
+                        <a href="http://goo.gl/mM9yRq">
                             <img class="img-portfolio img-responsive" src="img/bttf.png">
                         </a>
                         <h4>Back to the future game</h4>
@@ -209,7 +209,7 @@
                 
                 <div class="col-md-4 text-center">
                     <div class="portfolio-item">
-                        <a href="#">
+                        <a href="http://ruff-love.com/">
                             <img class="img-portfolio img-responsive" src="img/ruff.png">
                         </a>
                         <h4>Ruff-love.com</h4>
